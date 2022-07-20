@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather WaveD</title>
+    <link rel="stylesheet" href="./stype.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-section">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            placeholder="Tìm kiếm thành phố"
+            type="text"
+            name="search-city"
+            id="search-city"
+          />
+          <span class="micophone">
+            <i class="fa-solid fa-microphone"></i>
+          </span>
+        </div>
+        <p class="city-name">Nghệ An</p>
+        <p class="weather-state">Mây Thưa</p>
+        <img
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+          alt="weather icon"
+          class="weather-icon"
+        />
+
+        <p class="temperature">24</p>
+      </div>
+
+      <div class="add-selection">
+        <div class="item">
+          <div class="label">Mặt trời mọc</div>
+          <div class="value sunrise">5:30</div>
+        </div>
+        <div class="item">
+          <div class="label">Mặt trời lặn</div>
+          <div class="value sunset">17:36</div>
+        </div>
+        <div class="item">
+          <div class="label">Độ ẩm</div>
+          <div class="value"><span class="humidity">73</span>%</div>
+        </div>
+        <div class="item">
+          <div class="label">Gío</div>
+          <div class="value"><span class="wind"> 5.4</span> km/h</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./moment.js"></script>
+  </body>
+</html>
